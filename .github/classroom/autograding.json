@@ -1,0 +1,134 @@
+{
+  "tests": [
+    {
+      "name": "Sanity",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -v test_basic.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Sanity 2",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -v test_test_primes.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Obtain extra tests",
+      "setup": "",
+      "run": "wget https://pastebin.com/raw/5t5bJnQZ -O test_basic_extended.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "test_biggest_negative",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -v -k test_biggest_negative",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_biggest_repeated",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -v -k test_biggest_repeated",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_biggest2_negative",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -v -k test_biggest2_negative",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_biggestn_negative",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -v -k test_biggestn_negative",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_ffstring_large_files",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -k test_ffstring_large_files",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "test_panagram_all_combinations",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -v -k test_panagram_all_combinations",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_breakdown_use_maximum",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -v -k test_breakdown_use_maximum",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_breakdown_reduction",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -v -k test_breakdown_reduction",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Integrity test 1",
+      "setup": "",
+      "run": "echo \"659c802933498eb4e1605a39b507bf59  test_basic.py\" | md5sum -c",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Integrity tests 2",
+      "setup": "",
+      "run": "echo \"412d004be7e487e758ddfa9a46a45a81  test_test_primes.py\" | md5sum -c",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    }
+  ]
+}
